@@ -4,7 +4,7 @@ services:
   proxy:
     image: 'nginx:1.17-alpine'
     volumes:
-      - '/data/coolify/applications/kko0k8kwskcc0k0cwccgc88g/proxy/nginx.conf:/etc/nginx/conf.d/coolify.conf'  # Changed the mount path
+      - '/data/coolify/applications/kko0k8kwskcc0k0cwccgc88g/proxy/nginx.conf:/etc/nginx/conf.d/coolify_nginx.conf'  # Changed the mount path to avoid directory conflicts
     ports:
       - '4080:80'
     links:
